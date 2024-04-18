@@ -529,7 +529,7 @@
 @media (min-width: 1024px) and (max-width:1339px) {
 
     .menu_column .entries_card:hover .icon_box--price {
-        margin-right: 142px;
+        margin-right: 164px;
     }
 
     .menu_column .entries_card:hover .entries_card--text {
@@ -554,7 +554,7 @@
         overflow: visible;
     }
 
-    //
+    
     .menu_column .desserts_card:hover .icon_box--price {
         margin-right: 142px;
     }
@@ -668,8 +668,12 @@
     ////LAPTOP L/////
     @media (min-width: 1440px) {
 
+        .menu_column .entries_card:hover .icon {
+            margin-left: 15px;
+        }
+
         .menu_column .entries_card:hover .icon_box--price {
-            margin-right: 198px;
+            margin-right: 230px;
         }
     
         .menu_column .entries_card:hover .entries_card--text {
