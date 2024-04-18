@@ -1,0 +1,908 @@
+
+.picture_menu {
+    width: 100%;
+    height: 275px;
+    flex-shrink: 0;
+    object-fit: cover;
+    object-position: 0%;
+}
+
+.title_menu{
+    width: 100%;
+    height: 74px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 14px;
+    position: absolute;
+
+    margin-top: -74px;
+    background: #F6F6F6;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: var(--Black, #101010);
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+    }
+
+    .fa-regular {
+    height: 33px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    cursor: pointer;
+        
+    }
+    
+    .fa-regular {
+    transition: all 1s ease-out;
+    }
+    
+    .fa-regular:hover {
+        color:$color-button-icon;
+        font-weight:900; 
+    }
+
+.menu_column {
+    width: 100%;
+    
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background:$second-color;
+
+    .icon_box {
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-direction: row;
+        width: 12%;
+        gap: 12px;
+        margin-left: 72.5%;
+        margin-top: -37px;
+
+        .icon_box--price {
+            display: flex;
+            width: 18px;
+            height:18px;
+            margin-bottom: 13px;
+            margin-right: -11px;
+    
+            color: #353535;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 15.043px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+
+    .entries_menu_height360px {
+        width:90%;
+        height:360px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 12px;  
+        animation-name : slideInLeft;
+        animation-duration:1s;
+        animation-timing-function:ease-in;
+        animation-delay:0s;
+        animation-iteration-count:1;
+        animation-direction:normal;
+        animation-fill-mode:none; 
+    }
+
+    .entries_menu {
+        width:90%;
+        height:270px;
+            
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;  
+    }
+
+    .entries_title {
+        display: flex;
+        width: 41px;
+        height: 27px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        border-bottom: 4px solid;
+        border-color: #99E2D0;;
+
+    }
+
+    .entries_card {
+        
+        width: 97%;
+        height: 59px;
+        padding: 9px;
+        
+
+        border-radius: 15.043px;
+        background: var(--White, #FFF);
+        box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+
+        .entries_card--text {
+        height: 21px;
+        flex-shrink: 0;
+        align-self: stretch;
+
+
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        
+        color: #000;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        }
+        
+    }
+
+    .entries_card--secondtext {
+        height: 36px;
+        padding-right: 10px;
+        padding-top: 12px;
+        color: #000;
+        font-family: Roboto;
+        font-size: 13.043px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        overflow: hidden;
+        white-space: nowrap; 
+        text-overflow: ellipsis; 
+    }
+
+    .entries_card .icon {
+        opacity: 0;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: larger;
+        margin-left: auto; // Pour placer l'élément à droite
+        margin-top: -29px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: transform 1s ease, opacity 0.3s ease;
+      }
+      
+      
+      .entries_card:hover .icon {
+        opacity: 1;
+        width: 60px;
+        height: 77px;
+        gap: 10px;
+        z-index: 3;
+        position: absolute;
+        top: -12px;
+        left: 16px;
+        background: #99E2D0;
+        transform: translateX(-33%); 
+      }
+
+    .entries_card:hover .icon_box--price {
+        margin-right: 60px; 
+      }
+
+      .entries_card:hover .entries_card--secondtext {
+        width: 150px; 
+    }
+    
+    .entries_card--icon-visible .entries_card--secondtext {
+        width: 150px;
+        color: black;
+    }
+
+    .entries_card:hover .entries_card--text {
+        width: 150px;
+    }
+
+    .entries_card--icon-visible .entries_card--text {
+        width: 150px; 
+        color: black;
+    }
+
+    .flat_menu {
+        width:90%;
+        height:270px;
+            
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;  
+    }
+
+    .flat_title {
+        display: flex;
+        width: 41px;
+        height: 27px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        border-bottom: 4px solid;
+        border-color: #99E2D0;;
+
+    }
+
+    .flat_card {
+        
+        width: 97%;
+        height: 59px;
+        padding: 9px;
+        
+
+        border-radius: 15.043px;
+        background: var(--White, #FFF);
+        box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+
+        .flat_card--text {
+        width:auto;
+        height: 21px;
+        flex-shrink: 0;
+        align-self: stretch;
+
+        
+        color: #000;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: Roboto;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        }
+
+        .flat_card--price {
+            width:18px;
+            height:18px;
+
+            padding-left: 273px;
+
+
+        color: #353535;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 15.043px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        }
+
+        .flat_card--secondtext {
+            width: auto;
+            height: 36px;
+
+            padding-right: 10px;
+            padding-top: 12px;
+
+            color: #000;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-family: Roboto;
+            font-size: 12.043px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+    }
+
+    .flat_card .icon {
+        opacity: 0;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: larger;
+        margin-left: auto; // Pour placer l'élément à droite
+        margin-top: -29px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: transform 1s ease, opacity 0.3s ease;
+      }
+
+      .flat_card:hover .icon {
+        opacity: 1;
+        width: 60px;
+        height: 77px;
+        gap: 10px;
+        z-index: 3;
+        position: absolute;
+        top: -12px;
+        left: 16px;
+        background: #99E2D0;
+        transform: translateX(-33%); 
+      }
+
+      .flat_card:hover .icon_box--price {
+        margin-right: 60px; 
+      }
+
+      .flat_card:hover .flat_card--secondtext {
+        width: 150px; 
+    }
+    
+    .flat_card--icon-visible .flat_card--secondtext {
+        width: 150px; 
+        color: black;
+    }
+
+    .flat_card:hover .flat_card--text {
+        width: 150px; 
+    }
+
+    .flat_card--icon-visible .flat_card--text {
+        width: 150px; 
+        color: black;
+    }
+
+    
+    
+        .desserts_menu {
+            width:90%;
+            height:270px;
+                
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;  
+        }
+    
+        .desserts_title {
+            display: flex;
+            width: 41px;
+            height: 27px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+    
+            border-bottom: 4px solid;
+            border-color: #99E2D0;;
+    
+        }
+    
+        .desserts_card {
+            
+            width: 97%;
+            height: 59px;
+            padding: 9px;
+            border-radius: 15.043px;
+            background: var(--White, #FFF);
+            box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+        
+            .desserts_card--text {
+            width:auto;
+            height: 21px;
+            flex-shrink: 0;
+            align-self: stretch;
+        
+            
+            color: #000;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            }
+        
+            
+        
+            .desserts_card--secondtext {
+                height: 36px;
+                padding-right: 10px;
+                padding-top: 12px;
+                color: #000;
+                font-family: Roboto;
+                font-size: 13.043px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                overflow: hidden;
+                white-space: nowrap; 
+                text-overflow: ellipsis; 
+            }
+        
+        }
+
+        .desserts_card .icon {
+            opacity: 0;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: larger;
+            margin-left: auto; // Pour placer l'élément à droite
+            margin-top: -29px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            transition: transform 1s ease, opacity 0.3s ease;
+          }
+          
+          
+          .desserts_card:hover .icon {
+            opacity: 1;
+            width: 60px;
+            height: 77px;
+            gap: 10px;
+            z-index: 3;
+            position: absolute;
+            top: -12px;
+            left: 16px;
+            background: #99E2D0;
+            transform: translateX(-33%); 
+          }
+    
+        .desserts_card:hover .icon_box--price {
+            margin-right: 60px;
+          }
+    
+          .desserts_card:hover .desserts_card--secondtext {
+            width: 150px;
+        }
+        
+        .desserts_card--icon-visible .desserts_card--secondtext {
+            width: 150px;
+            color: black;
+        }
+
+        .desserts_card:hover .desserts_card--text {
+            width: 150px;
+        }
+
+        .desserts_card--icon-visible .desserts_card--text {
+            width: 150px;
+            color: black;
+        }
+}
+
+    .order_button {
+        width: 186px;
+        height: 50px;
+        flex-shrink: 0;
+    
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    
+        margin-top: 2%;
+        margin-bottom: 7%;
+        
+        
+        border-radius: 25px;
+        background: $search-button-gradient;
+    
+        
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .order_button:hover{
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+        opacity:0.80;
+        cursor:pointer;
+    }
+
+    .order_buttontext {
+        color: $main-color;
+
+
+
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        
+    }
+
+@media (min-width: 1024px) and (max-width:1339px) {
+
+    .menu_column .entries_card:hover .icon_box--price {
+        margin-right: 142px;
+    }
+
+    .menu_column .entries_card:hover .entries_card--text {
+        overflow: visible;
+    }
+
+    .menu_column .entries_card:hover .entries_card--secondtext {
+        overflow: visible;
+    }
+
+
+
+    .menu_column .flat_card:hover .icon_box--price {
+        margin-right: 142px;
+    }
+
+    .menu_column .flat_card:hover .flat_card--text {
+        overflow: visible;
+    }
+
+    .menu_column .flat_card:hover .flat_card--secondtext {
+        overflow: visible;
+    }
+
+    //
+    .menu_column .desserts_card:hover .icon_box--price {
+        margin-right: 142px;
+    }
+
+    .menu_column .desserts_card:hover .desserts_card--text {
+        overflow: visible;
+    }
+
+    .menu_column .desserts_card:hover .desserts_card--secondtext {
+        overflow: visible;
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform:translateX(-300px);
+        }
+        to {
+            transform:translateX(0);
+        }
+        }
+        
+
+    .menu_column {
+        width: 75%;
+        height: 1116px;
+        padding-top: 51px;
+        padding-bottom: 54px;
+        padding-left: 54px;
+        padding-right: 54px;
+        display: inline-flex;
+        align-items: center;
+        gap: 40px;
+        margin-left: 125px;
+        background: #F6F6F6;
+
+         .entries_menu {
+            width: 90%;
+            height: 479px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+
+        animation-name : slideInLeft;
+        animation-duration:1s;
+        animation-timing-function:ease-in;
+        animation-delay:0s;
+        animation-iteration-count:1;
+        animation-direction:normal;
+        animation-fill-mode:none; 
+        }
+        .flat_menu {
+        animation-name : slideInLeft;
+        animation-duration:1s;
+        animation-timing-function:ease-in;
+        animation-delay:0.25s;
+        animation-iteration-count:1;
+        animation-direction:normal;
+        animation-fill-mode:none;
+
+        
+
+        }
+
+        .desserts_menu {
+        animation-name : slideInLeft;
+        animation-duration:1s;
+        animation-timing-function:ease-in;
+        animation-delay:0.50s;
+        animation-iteration-count:1;
+        animation-direction:normal;
+        animation-fill-mode:none;
+        }
+
+        .title_menu {
+            width: 75%;
+            padding-left: 54px;
+            padding-right: 54px;
+            height:51px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            position: absolute;
+
+            margin-top: -100px;
+            padding-top: 28px;
+
+            background: #F6F6F6;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            color: var(--Black, #101010);
+            font-family: Shrikhand;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .icon_box {
+            margin-left: 62.5%;
+            margin-top: -37px;
+            position: absolute;
+        }
+
+    }
+
+    
+    }
+
+    ////LAPTOP L/////
+    @media (min-width: 1440px) {
+
+        .menu_column .entries_card:hover .icon_box--price {
+            margin-right: 198px;
+        }
+    
+        .menu_column .entries_card:hover .entries_card--text {
+            overflow: visible;
+        }
+    
+        .menu_column .entries_card:hover .entries_card--secondtext {
+            overflow: visible;
+        }
+    
+    
+    
+        .menu_column .flat_card:hover .icon_box--price {
+            margin-right: 198px;
+        }
+    
+        .menu_column .flat_card:hover .flat_card--text {
+            overflow: visible;
+        }
+    
+        .menu_column .flat_card:hover .flat_card--secondtext {
+            overflow: visible;
+        }
+    
+        //
+        .menu_column .desserts_card:hover .icon_box--price {
+            margin-right: 198px;
+        }
+    
+        .menu_column .desserts_card:hover .desserts_card--text {
+            overflow: visible;
+        }
+    
+        .menu_column .desserts_card:hover .desserts_card--secondtext {
+            overflow: visible;
+        }
+    
+        @keyframes slideInLeft {
+            from {
+                transform:translateX(-300px);
+            }
+            to {
+                transform:translateX(0);
+            }
+            }
+            
+    
+        .menu_column {
+            width: 75%;
+            height: 1116px;
+            padding-top: 51px;
+            padding-bottom: 54px;
+            padding-left: 54px;
+            padding-right: 54px;
+            display: inline-flex;
+            align-items: center;
+            gap: 40px;
+            margin-left: 125px;
+            background: #F6F6F6;
+    
+             .entries_menu {
+                width: 90%;
+                height: 479px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+    
+            animation-name : slideInLeft;
+            animation-duration:1s;
+            animation-timing-function:ease-in;
+            animation-delay:0s;
+            animation-iteration-count:1;
+            animation-direction:normal;
+            animation-fill-mode:none; 
+            }
+            .flat_menu {
+            animation-name : slideInLeft;
+            animation-duration:1s;
+            animation-timing-function:ease-in;
+            animation-delay:0.25s;
+            animation-iteration-count:1;
+            animation-direction:normal;
+            animation-fill-mode:none;
+    
+            
+    
+            }
+    
+            .desserts_menu {
+            animation-name : slideInLeft;
+            animation-duration:1s;
+            animation-timing-function:ease-in;
+            animation-delay:0.50s;
+            animation-iteration-count:1;
+            animation-direction:normal;
+            animation-fill-mode:none;
+            }
+    
+            .title_menu {
+                width: 75%;
+                padding-left: 54px;
+                padding-right: 54px;
+                height:51px;
+                flex-shrink: 0;
+                display: flex;
+                justify-content: center;
+                gap: 14px;
+                position: absolute;
+    
+                margin-top: -100px;
+                padding-top: 28px;
+    
+                background: #F6F6F6;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                color: var(--Black, #101010);
+                font-family: Shrikhand;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+    
+            .icon_box {
+                margin-left: 62.5%;
+                margin-top: -37px;
+                position: absolute;
+            }
+    
+        }
+    
+        
+        }
+
+    
+
+
+
+
+    //////TABLET////
+
+    @media (min-width: 565px) and (max-width: 1023px) {
+        .entries_card {
+            width: 90%;
+        }
+
+        .flat_card {
+            width: 90%;
+        }
+
+        .desserts_card {
+            width: 90%;
+        }
+
+        .menu_column .icon_box {
+            margin-left: 81.5%;
+        }
+
+        .menu_column .entries_card:hover .icon_box--price {
+            margin-right: 111px;
+        }
+
+        .menu_column .entries_card:hover .entries_card--text {
+            overflow: visible;
+        }
+
+        .menu_column .entries_card:hover .entries_card--secondtext {
+            overflow: visible;
+        }
+
+        .menu_column .flat_card:hover .icon_box--price {
+            margin-right: 111px;
+        }
+
+        .menu_column .flat_card:hover .flat_card--text {
+            overflow: visible;
+        }
+
+        .menu_column .flat_card:hover .flat_card--secondtext {
+            overflow: visible;
+        }
+        
+        .menu_column .icon_box {
+            margin-left: 81.5%;
+        }
+
+        .menu_column .desserts_card:hover .icon_box--price {
+            margin-right: 111px;
+        }
+
+        .menu_column .desserts_card:hover .desserts_card--text {
+            overflow: visible;
+        }
+
+        .menu_column .desserts_card:hover .desserts_card--secondtext {
+            overflow: visible;
+        }
+
+
+    }
+
+    /*@media ( min-width:320px) and (max-width: 564px) {
+
+        .entries_card {
+            width: 87%;
+        }
+
+        .flat_card {
+            width: 87%;
+        }
+
+        .desserts_card {
+            width: 87%;
+        }
+
+        .menu_column .icon_box--price {
+            font-size:15px;
+            margin-right: -108px;
+        }
+
+        /*.menu_column .icon_box {
+            margin-left: 55.5%;
+            margin-top: -82px;
+        }*/
+
+
+        
+
+     
+
+    
+
+
+
+
