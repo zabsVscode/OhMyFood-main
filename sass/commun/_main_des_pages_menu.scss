@@ -67,7 +67,7 @@
         flex-direction: row;
         width: 12%;
         gap: 12px;
-        margin-left: 72.5%;
+        margin-left: 76.5%;
         margin-top: -37px;
 
         .icon_box--price {
@@ -685,9 +685,13 @@
         }
     
     
-    
+        .menu_column .flat_card:hover .icon {
+            margin-left: 15px;
+        }
+
+
         .menu_column .flat_card:hover .icon_box--price {
-            margin-right: 198px;
+            margin-right: 230px;
         }
     
         .menu_column .flat_card:hover .flat_card--text {
@@ -699,8 +703,13 @@
         }
     
         //
+        .menu_column .desserts_card:hover .icon {
+            margin-left: 15px;
+        }
+
+
         .menu_column .desserts_card:hover .icon_box--price {
-            margin-right: 198px;
+            margin-right: 230px;
         }
     
         .menu_column .desserts_card:hover .desserts_card--text {
